@@ -13,7 +13,8 @@ SunCalc.getPosition(new Date(1330560000), 33.0, -120.1);
 System.out.println("azimuth: " + Double.toString(res.get("azimuth")));
 System.out.println("altitude: " + Double.toString(res.get("altitude")));
 
-Map<String, Date> res2 = SunCalc.getTimes(new Date(1330560000), 33.0, -120.1); String[] res2_keys = res2.keySet().toArray(new String[0]);
+Map<String, Date> res2 = SunCalc.getTimes(new Date(1330560000), 33.0, -120.1);
+String[] res2_keys = res2.keySet().toArray(new String[0]);
 
 for(int i = 0; i < res2_keys.length; i++) {
     System.out.println(res2_keys[i] + " " + res2.get(res2_keys[i]));
